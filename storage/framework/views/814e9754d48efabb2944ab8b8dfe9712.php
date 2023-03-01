@@ -14,7 +14,13 @@
     <div id="cards-container" class="row">
         <?php $__currentLoopData = $events; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $event): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <div class="card col-md-3">
-                <img src="" alt="" class="src">
+                <img src="img/logo-ico.png" alt="<?php echo e($event->title); ?>">
+                <div class="card-body">
+                    <div class="card-date">10/09/2023</div>
+                    <div class="card-title"><?php echo e($event->title); ?></div>
+                    <div class="card-participantes">X  Participantes</div>
+                    <a href="#" class="btn btn-primary">Saber mais</a>
+                </div>
             </div>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </div>
