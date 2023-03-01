@@ -12,7 +12,7 @@ class EventController extends Controller
 
         $events = Event::all();
     
-    return view('welcome', ['events'=>$events]);
+    return view('welcome', ['events' => $events]);
     }
 
     public function create() {
